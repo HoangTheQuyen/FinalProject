@@ -1,8 +1,12 @@
 <template>
-<router-view />
+<div id="app">
+    <app-header />
+    <router-view></router-view>
+</div>
 </template>
 
 <script>
+import Header from './components/header/header.vue'
 import {
     mapActions
 } from "vuex";
@@ -16,6 +20,17 @@ export default {
 
     created() {
         this.getData();
+    },
+    components: {
+        'app-header': Header
     }
 }
 </script>
+
+<style>
+body,
+html {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+</style>

@@ -28,7 +28,6 @@ for(let i = 1; i <= 10; i++){
     })
 }
 
-
 usernames = users.filter(p => {p.name, p.id});
 
 for(let i = 1; i <= 10; i++){
